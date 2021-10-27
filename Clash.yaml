@@ -14,39 +14,17 @@ proxy-groups:
   - name: "自行选择"
     type: select
     use:
-      - 外部代理1
-
-  - name: "Chains"
-    type: relay
+      - 外部代理
     proxies:
-      - Relay
-      - Outbound
-  - name: "Relay"
-    type: select
-    proxies:
-      - 🇭🇰香港2
-
-  - name: "Outbound"
-    type: select
-    use:
-      - 外部代理2
+      - DIRECT
+      - REJECT
 
 proxy-providers:
-  外部代理1:
+  外部代理:
     type: http
-    url: "https://gitee.com/ylrc-mengxin/mm/raw/master/Proxies1.yaml"
+    url: "https://xxx.com.yaml"
     interval: 3600
-    path: ./Proxies.yaml
-    health-check:
-      enable: true
-      interval: 600
-      # lazy: true
-      url: http://www.gstatic.com/generate_204
-  外部代理2:
-    type: http
-    url: "https://gitee.com/ylrc-mengxin/mm/raw/master/Proxies2.yaml"
-    interval: 3600
-    path: ./Proxies.yaml
+    path: ./proxies1.yaml
     health-check:
       enable: true
       interval: 600
