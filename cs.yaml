@@ -1,0 +1,18 @@
+proxies:
+- {"name":"1","server":"37.19.211.9","type":"ss","port":50168,"password":"WCuz7yrfZSCQQXSNrtGPz2HT","cipher":"aes-256-gcm"}
+- {"name":"2","server":"37.19.211.27","type":"ss","port":50168,"password":"WCuz7yrfZSCQQXSNrtGPz2HT","cipher":"aes-256-gcm"}
+- {"name":"3","server":"167.88.63.29","type":"ss","port":801,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+- {"name":"4","server":"72.140.224.197","type":"ss","country":"🇨🇦CA","port":802,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+- {"name":"5","server":"194.124.76.241","type":"ss","country":"🇩🇪DE","port":809,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+- {"name":"6","server":"194.124.76.194","type":"ss","country":"🇩🇪DE","port":809,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+- {"name":"7","server":"195.181.171.228","type":"ss","country":"🇬🇧GB","port":48938,"password":"4ejJ8n5ddLuYDUHGXJre2ufJ","cipher":"aes-256-gcm"}
+- {"name":"8","server":"195.181.171.226","type":"ss","country":"🇬🇧GB","port":49653,"password":"Y9GcTPemHMKEkrfGQPJqFDNr","cipher":"aes-256-gcm"}
+- {"name":"9","server":"92.119.16.204","type":"ss","country":"🇬🇧GB","port":809,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+- {"name":"10","server":"45.144.112.162","type":"ss","country":"🇬🇧GB","port":809,"password":"G!yBwPWH3Vao","cipher":"chacha20-ietf-poly1305"}
+- {"name":"11","server":"45.134.140.17","type":"ss","country":"🇬🇪GE","port":50168,"password":"WCuz7yrfZSCQQXSNrtGPz2HT","cipher":"aes-256-gcm"}
+- {"name":"12","server":"91.245.254.115","type":"ss","country":"🇷🇴RO","port":31944,"password":"aYNeKDMzYQYw4KbUbJA8Wszq","cipher":"aes-256-gcm"}
+- {"name":"13","server":"89.38.227.163","type":"ss","country":"🇷🇴RO","port":48938,"password":"4ejJ8n5ddLuYDUHGXJre2ufJ","cipher":"aes-256-gcm"}
+- {"name":"14","server":"89.38.227.165","type":"ss","country":"🇷🇴RO","port":42185,"password":"FaTG4zALZru72gxjgSHQ7Jdh","cipher":"aes-256-gcm"}
+- {"name":"15","server":"91.245.254.235","type":"ss","country":"🇷🇴RO","port":42304,"password":"p26v2JwhQVHDHsXk66fXt56r","cipher":"aes-256-gcm"}
+- {"name":"16","server":"91.219.214.11","type":"ss","country":"🇷🇴RO","port":49653,"password":"Y9GcTPemHMKEkrfGQPJqFDNr","cipher":"aes-256-gcm"}
+- {"name":"17","server":"91.245.254.131","type":"ss","country":"🇷🇴RO","port":33148,"password":"CMduaFXddcQbwNAAs7xFDnc8","cipher":"aes-256-gcm"}
