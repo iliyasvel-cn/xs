@@ -14,3 +14,13 @@ proxies:
     server: nssb.iliyasvel.xyz
     port: 443
     password: HaoKuaiLe
+    
+      - name: "🇺🇸美国3"
+    type: snell
+    server: sao.huo.jimosaofu.xyz
+    port: 10120
+    psk: JikenannaiXiaosaofu
+    version: 1
+    obfs-opts:
+        mode: tls
+        host: mirrorn.centos.org
