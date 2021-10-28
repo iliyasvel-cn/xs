@@ -1,7 +1,7 @@
 proxies:
   - name: "🇺🇸美国1"
     type: snell
-    server: ctmd-shabi.shabi.iliyasvel.xyz
+    server: ji.nannai.jimosaofu.xyz
     port: 2053
     psk: caonimade
     version: 1
@@ -11,9 +11,9 @@ proxies:
 
   - name: "🇺🇸美国2"
     type: trojan
-    server: nssb.iliyasvel.xyz
+    server: jike.nannai.jimosaofu.xyz
     port: 443
-    password: HaoKuaiLe
+    password: jikenannai-JIMOSAOFU
     
       - name: "🇺🇸美国3"
     type: snell
