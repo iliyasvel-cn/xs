@@ -15,7 +15,7 @@ proxies:
     port: 443
     password: jikenannai-JIMOSAOFU
     
-      - name: "🇺🇸美国3"
+  - name: "🇺🇸美国3"
     type: snell
     server: sao.huo.jimosaofu.xyz
     port: 10120
