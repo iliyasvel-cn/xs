@@ -13,5 +13,4 @@ proxies:
     type: trojan
     server: nssb.iliyasvel.xyz
     port: 443
-    password: haokuaile
-    skip-cert-verify: true
+    password: HaoKuaiLe
