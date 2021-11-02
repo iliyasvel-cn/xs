@@ -1,7 +1,7 @@
 proxies:
   - name: "🇺🇸美国1"
     type: snell
-    server: ji.nannai.jimosaofu.xyz
+    server: sha.diao.jimosaofu.xyz
     port: 2053
     psk: WoHaoKuaiLeA
     version: 1
@@ -11,9 +11,9 @@ proxies:
 
   - name: "🇺🇸美国2"
     type: trojan
-    server: jike.nannai.jimosaofu.xyz
+    server: sha.diao.jimosaofu.xyz
     port: 443
-    password: jikenannai-JIMOSAOFU
+    password: Kuaile-Meiyitian
     
   - name: "🇺🇸美国3"
     type: snell
