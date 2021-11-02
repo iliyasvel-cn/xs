@@ -3,7 +3,7 @@ proxies:
     type: snell
     server: ji.nannai.jimosaofu.xyz
     port: 2053
-    psk: caonimade
+    psk: WoHaoKuaiLeA
     version: 1
     obfs-opts:
         mode: tls
