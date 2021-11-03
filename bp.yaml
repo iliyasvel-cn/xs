@@ -24,3 +24,12 @@ proxies:
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
+  - name: "🇷🇺俄罗斯"
+    type: snell
+    server: 45.153.231.107
+    port: 62053
+    psk: NisuanshenmedongxI
+    version: 1
+    obfs-opts:
+        mode: tls
+        host: mirrorn.centos.org
