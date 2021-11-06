@@ -7,7 +7,7 @@ proxies:
     version: 1
     obfs-opts:
         mode: tls
-        host: mirrorn.centos.org
+        host: www.speedtest.net
 
   - name: "🇺🇸美国2"
     type: trojan
@@ -23,7 +23,8 @@ proxies:
     version: 1
     obfs-opts:
         mode: tls
-        host: mirrorn.centos.org
+        host: www.speedtest.net
+        
   - name: "🇷🇺俄罗斯"
     type: snell
     server: 45.153.231.107
