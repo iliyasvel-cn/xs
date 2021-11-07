@@ -1,7 +1,7 @@
 proxies:
   - name: "🇭🇰HK"
     type: snell
-    server: hkt1.xiaomai.my03.com
+    server: cn1.node.zeroteam.top
     port: 11350
     psk: KuailemeiyitianA-MM
     version: 1
