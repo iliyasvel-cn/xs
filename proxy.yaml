@@ -1,10 +1,10 @@
 proxies:
   - name: "🇭🇰HK"
     type: snell
-    server: cn1.node.zeroteam.top
-    port: 11350
+    server: cn2.node.zeroteam.top
+    port: 10088
     psk: KuailemeiyitianA-MM
-    version: 1
+    version: 2
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
@@ -38,7 +38,7 @@ proxies:
     server: 52.81.178.252
     port: 62053
     psk: NisuanshenmedongxI
-    version: 1
+    version: 2
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
@@ -48,7 +48,7 @@ proxies:
     server: jike.nannai.jimosaofu.xyz
     port: 2053
     psk: caonimade
-    version: 1
+    version: 2
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
@@ -64,7 +64,7 @@ proxies:
     server: 144.172.69.74
     port: 10120
     psk: JikenannaiXiaosaofu
-    version: 1
+    version: 2
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
