@@ -1,37 +1,23 @@
 proxies:
   - name: "🇭🇰HK"
     type: snell
-    server: cn2.node.zeroteam.top
-    port: 10088
-    psk: KuailemeiyitianA-MM
-    version: 2
+    server: hktddns.114514ms.me
+    port: 38843
+    psk: KuaiLeMeiYiTian
+    version: 1
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇭🇰香港1"
-    type: ss
-    server: cm.syhwdz.top
-    port: 40732
-    cipher: chacha20-ietf-poly1305
-    password: "G!yBwPWH3Vao"
-    udp: true
-
-  - name: "🇭🇰香港2"
-    type: ss
-    server: cm.syhwdz.top
-    port: 41951
-    cipher: aes-256-gcm
-    password: "CUndSZnYsPKcu6Kj8THVMBHD"
-    udp: true
-
-  - name: "🇯🇵日本"
-    type: ss
-    server: cm.syhwdz.top
-    port: 40848
-    cipher: aes-256-gcm
-    password: "8n6pwAcrrv2pj6tFY2p3TbQ6"
-    udp: true
+  - name: "🇭🇰HKIX"
+    type: snell
+    server: 20.205.99.22
+    port: 22053
+    psk: WoHaoKuaiLeA
+    version: 1
+    obfs-opts:
+        mode: tls
+        host: mirrorn.centos.org
 
   - name: "🇷🇺俄罗斯"
     type: snell
