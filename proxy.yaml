@@ -19,10 +19,10 @@ proxies:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇭🇰HKIX"
+  - name: "🇭🇰HKIX(中转优化)"
     type: snell
-    server: 20.205.99.22
-    port: 22053
+    server: zz.jimosaofu.xyz
+    port: 35112
     psk: WoHaoKuaiLeA
     version: 1
     obfs-opts:
@@ -39,28 +39,29 @@ proxies:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇺🇸美国1"
+  - name: "🇺🇸美国1(中转优化)"
     type: snell
-    server: jike.nannai.jimosaofu.xyz
-    port: 2053
-    psk: caonimade
-    version: 2
+    server: zz.jimosaofu.xyz
+    port: 44511
+    psk: WoHaoKuaiLeA
+    version: 1
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇺🇸美国2"
+  - name: "🇺🇸美国2(中转优化)"
     type: trojan
-    server: jike.nannai.jimosaofu.xyz
-    port: 443
-    password: jikenannai-JIMOSAOFU
+    server: zz.jimosaofu.xyz
+    port: 55530
+    password: Kuaile-Meiyitian
+    skip-cert-verify: true
 
   - name: "🇺🇸美国3"
     type: snell
-    server: 144.172.69.74
-    port: 10120
-    psk: JikenannaiXiaosaofu
-    version: 2
+    server: sha.diao.jimosaofu.xyz
+    port: 2053
+    psk: WoHaoKuaiLeA
+    version: 1
     obfs-opts:
         mode: tls
-        host: mirrorn.centos.org
+        host: www.speedtest.net
