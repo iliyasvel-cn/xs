@@ -1,6 +1,16 @@
 proxies:
   - name: "🇭🇰HK"
     type: snell
+    server: 20.205.99.22
+    port: 32054
+    psk: WoHaoKuaiLeA
+    version: 1
+    obfs-opts:
+        mode: tls
+        host: mirrorn.centos.org
+
+  - name: "🇭🇰HKT"
+    type: snell
     server: hktddns.114514ms.me
     port: 38843
     psk: KuaiLeMeiYiTian
