@@ -9,21 +9,12 @@ proxies:
         mode: tls
         host: www.speedtest.net
 
-  - name: "🇺🇸美国2"
+  - name: "🇺🇸美国2(中转优化)"
     type: trojan
-    server: sha.diao.jimosaofu.xyz
-    port: 443
+    server: zz.jimosaofu.xyz
+    port: 55530
     password: Kuaile-Meiyitian
-    
-  - name: "🇺🇸美国3"
-    type: snell
-    server: sao.huo.jimosaofu.xyz
-    port: 10120
-    psk: JikenannaiXiaosaofu
-    version: 1
-    obfs-opts:
-        mode: tls
-        host: www.speedtest.net
+    skip-cert-verify: true
         
   - name: "🇷🇺俄罗斯"
     type: snell
