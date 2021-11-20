@@ -12,7 +12,7 @@ proxies:
   - name: "🇺🇸美国2(中转优化)"
     type: trojan
     server: zz.jimosaofu.xyz
-    port: 55530
+    port: 53324
     password: Kuaile-Meiyitian
     skip-cert-verify: true
         
