@@ -21,40 +21,30 @@ proxies:
 
   - name: "🇭🇰HKIX(中转优化)"
     type: snell
-    server: zz.jimosaofu.xyz
-    port: 35112
+    server: 20.205.99.22
+    port: 22053
     psk: WoHaoKuaiLeA
     version: 1
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇷🇺俄罗斯"
+  - name: "🇺🇸美国1"
     type: snell
-    server: 52.81.178.252
-    port: 62053
-    psk: NisuanshenmedongxI
-    version: 2
-    obfs-opts:
-        mode: tls
-        host: mirrorn.centos.org
-
-  - name: "🇺🇸美国1(中转优化)"
-    type: snell
-    server: zz.jimosaofu.xyz
-    port: 44511
+    server: sha.bi.jimosaofu.xyz
+    port: 443
     psk: WoHaoKuaiLeA
     version: 1
     obfs-opts:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇺🇸美国2(中转优化)"
+  - name: "🇺🇸美国2"
     type: trojan
-    server: zz.jimosaofu.xyz
-    port: 55530
+    server: sha.diao.jimosaofu.xyz
+    port: 443
     password: Kuaile-Meiyitian
-    skip-cert-verify: true
+    #skip-cert-verify: true
 
   - name: "🇺🇸美国3"
     type: snell
