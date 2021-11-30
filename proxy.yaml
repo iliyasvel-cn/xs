@@ -41,17 +41,17 @@ proxies:
 
   - name: "🇺🇸美国2"
     type: trojan
-    server: sha.bi.jimosaofu.xyz
-    port: 443
+    server: zz.jimosaofu.xyz
+    port: 42403
     password: jikenannai-JIMOSAOFU
-    #skip-cert-verify: true
+    skip-cert-verify: true
 
   - name: "🇺🇸美国3"
     type: trojan
-    server: sha.diao.jimosaofu.xyz
-    port: 443
+    server: zz.jimosaofu.xyz
+    port: 33214
     password: Kuaile-Meiyitian
-    #skip-cert-verify: true
+    skip-cert-verify: true
 
   - name: "🇺🇸美国4"
     type: snell
