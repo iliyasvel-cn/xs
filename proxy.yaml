@@ -1,5 +1,5 @@
 proxies:
-  - name: "🇭🇰HK"
+  - name: "🇭🇰HK(CN2优化)"
     type: snell
     server: 20.205.99.22
     port: 32054
@@ -9,10 +9,10 @@ proxies:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇭🇰HKT"
+  - name: "🇭🇰HKT(中转优化)"
     type: snell
-    server: hktddns.114514ms.me
-    port: 38843
+    server: cm.syhwdz.top
+    port: 40524
     psk: KuaiLeMeiYiTian
     version: 1
     obfs-opts:
@@ -32,7 +32,7 @@ proxies:
   - name: "🇺🇸美国1"
     type: snell
     server: sha.bi.jimosaofu.xyz
-    port: 443
+    port: 8443
     psk: WoHaoKuaiLeA
     version: 1
     obfs-opts:
@@ -41,12 +41,19 @@ proxies:
 
   - name: "🇺🇸美国2"
     type: trojan
+    server: sha.bi.jimosaofu.xyz
+    port: 443
+    password: jikenannai-JIMOSAOFU
+    #skip-cert-verify: true
+
+  - name: "🇺🇸美国3"
+    type: trojan
     server: sha.diao.jimosaofu.xyz
     port: 443
     password: Kuaile-Meiyitian
     #skip-cert-verify: true
 
-  - name: "🇺🇸美国3"
+  - name: "🇺🇸美国4"
     type: snell
     server: sha.diao.jimosaofu.xyz
     port: 2053
@@ -55,3 +62,22 @@ proxies:
     obfs-opts:
         mode: tls
         host: www.speedtest.net
+
+  - name: "SG没用"
+    type: vmess
+    server: 159.223.75.14
+    port: 41462
+    uuid: 7556ad52-2253-4443-a483-623afcf4539c
+    alterId: 0
+    cipher: auto
+    # udp: true
+    # tls: true
+    # skip-cert-verify: true
+    # servername: example.com # priority over wss host
+    network: ws
+    ws-opts:
+    path: /
+    #   headers:
+    #     Host: v2ray.com
+    #   max-early-data: 2048
+    #   early-data-header-name: Sec-WebSocket-Protocol
