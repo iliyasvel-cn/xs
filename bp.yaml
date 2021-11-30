@@ -1,5 +1,5 @@
 proxies:
-  - name: "🇺🇸美国1"
+  - name: "🇺🇸美国1(中转优化)"
     type: trojan
     server: zz.jimosaofu.xyz
     port: 42403
