@@ -29,39 +29,17 @@ proxies:
         mode: tls
         host: mirrorn.centos.org
 
-  - name: "🇺🇸美国1"
-    type: snell
-    server: sha.bi.jimosaofu.xyz
-    port: 8443
-    psk: WoHaoKuaiLeA
-    version: 1
-    obfs-opts:
-        mode: tls
-        host: mirrorn.centos.org
-
-  - name: "🇺🇸美国2"
+  - name: "JP"
     type: trojan
-    server: zz.jimosaofu.xyz
-    port: 42403
-    password: jikenannai-JIMOSAOFU
-    skip-cert-verify: true
-
-  - name: "🇺🇸美国3"
-    type: trojan
-    server: zz.jimosaofu.xyz
-    port: 33214
-    password: Kuaile-Meiyitian
-    skip-cert-verify: true
-
-  - name: "🇺🇸美国4"
-    type: snell
-    server: sha.diao.jimosaofu.xyz
-    port: 2053
-    psk: WoHaoKuaiLeA
-    version: 1
-    obfs-opts:
-        mode: tls
-        host: www.speedtest.net
+    server: jp.jimosaofu.xyz
+    port: 443
+    password: Jimoxiaosaofu-jp
+    udp: true
+    # skip-cert-verify: true
+    # sni: example.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
 
   - name: "SG没用"
     type: vmess
