@@ -1,14 +1,20 @@
 proxies:
-  - name: "🇺🇸美国1(中转优化)"
-    type: trojan
-    server: zz.jimosaofu.xyz
-    port: 42403
-    password: jikenannai-JIMOSAOFU
-    skip-cert-verify: true
+  - name: "🇺🇸美国1"
+    type: snell
+    server: sha.bi.jimosaofu.xyz
+    port: 8443
+    psk: WoHaoKuaiLeA
+    version: 1
+    obfs-opts:
+        mode: tls
+        host: mirrorn.centos.org
 
-  - name: "🇺🇸美国2(中转优化)"
-    type: trojan
-    server: zz.jimosaofu.xyz
-    port: 33214
-    password: Kuaile-Meiyitian
-    skip-cert-verify: true
+  - name: "🇺🇸美国2"
+    type: snell
+    server: sha.diao.jimosaofu.xyz
+    port: 8443
+    psk: WoHaoKuaiLeA
+    version: 1
+    obfs-opts:
+        mode: tls
+        host: mirrorn.centos.org
