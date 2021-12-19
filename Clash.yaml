@@ -22,9 +22,9 @@ proxy-groups:
 proxy-providers:
   外部代理:
     type: http
-    url: "https://xxx.com.yaml"#外部代理订阅链接
+    url: "https://raw.githubusercontent.com/iliyasvel-cn/xs/xx/cs.yaml"
     interval: 3600
-    path: ./外部代理.yaml
+    path: ./cs.yaml
     health-check:
       enable: true
       interval: 600
