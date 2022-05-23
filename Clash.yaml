@@ -65,7 +65,7 @@ proxy-groups:
 proxy-providers:
   proxy:
     type: http
-    url: "https://scrape.tagonline.asia/api/v1/client/subscribe?token=7205e25dd5615b64615415c311735435"
+    url: "https://suo.yt/VXOz3Zd"
     interval: 3600
     path: ./proxy.yaml
     health-check:
