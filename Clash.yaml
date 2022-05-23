@@ -99,7 +99,7 @@ rule-providers:
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,Advertising,REJECT
+  - RULE-SET,AD,REJECT
   - RULE-SET,Advertising,REJECT
   - RULE-SET,Global,自行选择
   - GEOIP,CN,DIRECT
