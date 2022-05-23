@@ -53,7 +53,7 @@ proxy-groups:
 proxy-providers:
   proxy:
     type: http
-    url: "https://suo.yt/VXOz3Zd"
+    url: ""
     interval: 3600
     path: ./proxy.yaml
     health-check:
