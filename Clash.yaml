@@ -1,32 +1,108 @@
 port: 7890
 socks-port: 7891
-allow-lan: false
+allow-lan: true
 mode: rule
 log-level: info
 ipv6: false
-external-controller: 0.0.0.0:9090
-secret: ''
+external-controller: 127.0.0.1:9090
+secret: 'mingming'
 hosts:
+    '*.origin.com': '104.109.129.224'
+    'cloudsync-prod.s3.amazonaws.com': '104.109.129.224'
+    'origin-a.akamaihd.net': '104.109.129.224'
+    'ssl-lvlt.cdn.ea.com': '8.252.18.252'
+    'blzddist1-a.akamaihd.net': '175.45.42.210'
+    'blzddistkr1-a.akamaihd.net': '175.45.42.210'
+    'bnetproduct-a.akamaihd.net': '175.45.42.210'
+    'level3.blizzard.com': '8.250.167.254'
+    'kr.cdn.blizzard.com': '137.221.64.5'
+    'us.cdn.blizzard.com': '137.221.64.5'
+    'eu.cdn.blizzard.com': '137.221.64.5'
 
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - 114.114.114.114
+    - 223.5.5.5
+    - 8.8.8.8
+  fallback: []
+  fake-ip-filter:
+    - dns.msftncsi.com
+    - www.msftncsi.com
+    - www.msftconnecttest.com
+
+tun:
+  enable: true
+  stack: gvisor
+  auto-detect-interface: true
+  auto-route: true
+  dns-hijack:
+    - 198.18.0.2:53
+
+nameserver-policy:
+    '*.origin.com': '104.109.129.224'
+    'cloudsync-prod.s3.amazonaws.com': '104.109.129.224'
+    'origin-a.akamaihd.net': '104.109.129.224'
+    'ssl-lvlt.cdn.ea.com': '8.252.18.252'
+    'blzddist1-a.akamaihd.net': '175.45.42.210'
+    'blzddistkr1-a.akamaihd.net': '175.45.42.210'
+    'bnetproduct-a.akamaihd.net': '175.45.42.210'
+    'level3.blizzard.com': '8.250.167.254'
+    'kr.cdn.blizzard.com': '137.221.64.5'
+    'us.cdn.blizzard.com': '137.221.64.5'
+    'eu.cdn.blizzard.com': '137.221.64.5'
+    
 proxies:
 
 proxy-groups:
   - name: "自行选择"
     type: select
     use:
-      - 外部代理
+      - proxy
     proxies:
       - DIRECT
       - REJECT
 
 proxy-providers:
-  外部代理:
+  proxy:
     type: http
-    url: "https://raw.githubusercontent.com/iliyasvel-cn/xs/xx/cs.yaml"
+    url: "https://scrape.tagonline.asia/api/v1/client/subscribe?token=7205e25dd5615b64615415c311735435"
     interval: 3600
-    path: ./cs.yaml
+    path: ./proxy.yaml
     health-check:
       enable: true
       interval: 600
       # lazy: true
       url: http://www.gstatic.com/generate_204
+      
+rule-providers:
+  AD:
+    behavior: classical
+    type: http
+    url: "https://gh.api.99988866.xyz/https://anti-ad.net/clash.yaml"
+    path: ./ruleset/AD.yaml
+    interval: 86400
+
+  Advertising:
+    behavior: classical
+    type: http
+    url: "https://gh.api.99988866.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising.yaml"
+    path: ./ruleset/Advertising.yaml
+    interval: 86400
+
+  Global:
+    behavior: classical
+    type: http
+    url: "https://gh.api.99988866.xyz/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml"
+    path: ./ruleset/Global.yaml
+    interval: 86400
+
+rules:
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,Advertising,REJECT
+  - RULE-SET,Advertising,REJECT
+  - RULE-SET,Global,自行选择
+  - GEOIP,CN,DIRECT
+  - MATCH,自行选择
