@@ -63,12 +63,6 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       
 rule-providers:
-  AD:
-    behavior: classical
-    type: http
-    url: "https://gh.api.99988866.xyz/https://github.com/privacy-protection-tools/anti-AD"
-    path: ./ruleset/AD.yaml
-    interval: 86400
 
   Advertising:
     behavior: classical
@@ -87,7 +81,6 @@ rule-providers:
 rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,AD,REJECT
   - RULE-SET,Advertising,REJECT
   - RULE-SET,Global,自行选择
   - GEOIP,CN,DIRECT
